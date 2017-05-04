@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^gnosis-innovation.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.gnosis-innovation.com$
+RewriteRule ^/?$ "http\:\/\/gnosis\-innovation\.com\.ng" [R=301,L]
+

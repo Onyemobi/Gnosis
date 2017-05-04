@@ -1,0 +1,138 @@
+
+/* ------ BOILERPLATE TEMPLATE ------ */
+
+
+#sorter{
+	list-style-type:none;
+	float:left; 
+	width:100%;
+}
+
+#sorter li{
+	display:inline-block;
+	padding-left:3.5%;
+	padding-right:3.5%;
+	text-align:center;
+	cursor:pointer;
+}
+
+#sorter li:hover{
+	background-color:yellow;
+}
+
+#sorter li img{
+	height:auto;
+  	width:auto;
+}
+
+#Grid{
+	width: 100%;
+	text-align: justify;
+	font-size: 0.1px;
+}
+
+#Grid:after{
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+#Grid .mix{
+	display: none;
+	opacity: 0;
+	width: 25%;
+	height: 25%;
+	vertical-align: center;
+	margin-bottom: 20px;
+	background: #FFF;
+	color: blue;
+	font-size: 15px;
+	text-align: center;
+	line-height: 25%;
+}
+
+#Grid .gap{
+	display: inline-block;
+	width: 25%;
+}
+
+/* Tablet/iPads (Portrait & Landscape) */
+@media only screen and (min-width:768px) and (max-width:960px)
+{
+	.second-nav{
+		display:block;
+		transition: height 1s;	
+	}
+}
+
+/* Smaller Tablets (Portrait & Landscape) */
+@media only screen and (min-width:569px) and (max-width:767px)
+{
+	.second-nav{
+		height:auto;
+		display:block;
+		overflow:hidden;
+		width:100%;
+	}
+	
+	.second-nav #sorter{
+		padding:2% 1%;
+		text-align:center;
+		width:100%;
+	}
+	
+	#sorter li{
+		float:none;
+		display:block;
+		width:100%;
+	}
+	
+	#sorter li a{
+		margin-bottom:2px;
+		text-align:center;
+	}
+	
+	#sorter li a:hover, #sorter li a.active{
+		display:block;
+	}
+
+}
+
+
+/* Smartphones (Portrait & Landscape) */
+@media only screen and (min-width:0px) and (max-width:568px)
+{
+	.second-nav{
+		height:auto;
+		display:block;
+		overflow:hidden;
+		width:100%;
+		transition: width 1s;
+	}
+	
+	.second-nav #sorter{
+		padding:2% 1%;
+		text-align:center;
+		width:100%;
+	}
+	
+	#sorter li{
+		float:none;
+		display:block;
+		width:100%;
+	}
+	
+	#sorter li a{
+		margin-bottom:2px;
+		text-align:center;
+	}
+	
+	#sorter li a:hover, #sorter li a.active{
+		display:block;
+	}	
+	
+	#Grid .mix{
+	width: 50%;
+	height: 50%;
+	}
+}

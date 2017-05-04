@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.container-main
+{
+	width:100%;	
+}
+
+#main-nav
+{
+	float:left; 
+	width:50%;
+}
+
+.navbar .brand img 
+{
+
+	width: auto;
+	margin-top:-40px;
+}
+
+@media (max-width: 767px)
+{
+	
+#main-nav
+{
+	float:none;
+	width:100%;
+	margin-top:10px;
+	
+}
+}
